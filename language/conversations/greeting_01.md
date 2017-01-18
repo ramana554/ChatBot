@@ -10,7 +10,7 @@ timestamp: 2017-01-18T12:01:22.6385852+05:30
 * greeting
 
 < Good bye
-* goodbye
+* bye
 
 < See you later!
-* goodbye
+* bye

@@ -40,14 +40,24 @@ exports.handle = function handle(client) {
       client.done()
     }
   })
-
   const handleGoodbye = client.createStep({
     satisfied() {
       return false
     },
 
     prompt() {
-      client.addResponse('goodbye')
+      client.addResponse('greeting')
+      client.done()
+    }
+  })
+  
+  const handleBye = client.createStep({
+    satisfied() {
+      return false
+    },
+
+    prompt() {
+      client.addResponse('bye')
       client.done()
     }
   })
@@ -76,13 +86,14 @@ exports.handle = function handle(client) {
 
   client.runFlow({
     classifications: {
-      goodbye: 'goodbye',
+      bye: 'bye',
       greeting: 'greeting',
 	  query: 'query',
 	  reply: 'reply'
     },
     streams: {
-      goodbye: handleGoodbye,
+	  goodbye: handleGoodbye,
+      bye: handleBye,
       greeting: handleGreeting,
 	  query: handleQuery,
 	  reply: handleReply,
