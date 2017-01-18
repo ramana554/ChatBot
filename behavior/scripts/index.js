@@ -47,7 +47,7 @@ exports.handle = function handle(client) {
     },
 
     prompt() {
-      client.addResponse('bye')
+      client.addResponse('goodbye')
       client.done()
     }
   })
@@ -76,13 +76,13 @@ exports.handle = function handle(client) {
 
   client.runFlow({
     classifications: {
-      bye: 'bye',
+      goodbye: 'goodbye',
       greeting: 'greeting',
 	  query: 'query',
 	  reply: 'reply'
     },
     streams: {
-      bye: handleGoodbye,
+      goodbye: handleGoodbye,
       greeting: handleGreeting,
 	  query: handleQuery,
 	  reply: handleReply,
