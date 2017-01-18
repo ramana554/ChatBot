@@ -51,15 +51,41 @@ exports.handle = function handle(client) {
       client.done()
     }
   })
+  
+    const handleQuery = client.createStep({
+    satisfied() {
+      return false
+    },
+
+    prompt() {
+      client.addResponse('Query')
+      client.done()
+    }
+  })
+  
+    const handleReply = client.createStep({
+    satisfied() {
+      return false
+    },
+
+    prompt() {
+      client.addResponse('Reply')
+      client.done()
+    }
+  })
 
   client.runFlow({
     classifications: {
       goodbye: 'goodbye',
-      greeting: 'greeting'
+      greeting: 'greeting',
+	  Query: 'Query',
+	  Reply: 'Reply'
     },
     streams: {
       goodbye: handleGoodbye,
       greeting: handleGreeting,
+	  Query: handleQuery,
+	  Reply: handleReply,
       main: 'onboarding',
       onboarding: [sayHello],
       end: [untrained]
