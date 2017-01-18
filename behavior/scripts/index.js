@@ -109,6 +109,7 @@ exports.handle = function handle(client) {
   client.runFlow({
     classifications: {
       bye: 'bye',
+	  goodbye: 'goodbye',
       greeting: 'greeting',
 	  query: 'query',
 	  reply: 'reply',
