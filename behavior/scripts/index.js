@@ -58,7 +58,7 @@ exports.handle = function handle(client) {
     },
 
     prompt() {
-      client.addResponse('Query')
+      client.addResponse('Reply')
       client.done()
     }
   })
