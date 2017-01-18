@@ -62,7 +62,7 @@ exports.handle = function handle(client) {
     }
   })
   
-    const handleQuery = client.createStep({
+  const handleQuery = client.createStep({
     satisfied() {
       return false
     },
@@ -73,7 +73,7 @@ exports.handle = function handle(client) {
     }
   })
   
-    const handleReply = client.createStep({
+  const handleReply = client.createStep({
     satisfied() {
       return false
     },
@@ -84,7 +84,7 @@ exports.handle = function handle(client) {
     }
   })
   
-    const handleAboutAscendia = client.createStep({
+  const handleAboutAscendia = client.createStep({
     satisfied() {
       return false
     },
@@ -95,7 +95,7 @@ exports.handle = function handle(client) {
     }
   })
   
-    const handleAboutAscendia_bot = client.createStep({
+  const handleAboutAscendia_bot = client.createStep({
     satisfied() {
       return false
     },
