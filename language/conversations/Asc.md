@@ -7,4 +7,4 @@ Who are you?
 * Query
 
 < We are Ascednia
-* goodbye
+* Reply
