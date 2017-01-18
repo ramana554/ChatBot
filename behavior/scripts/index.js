@@ -78,14 +78,14 @@ exports.handle = function handle(client) {
     classifications: {
       goodbye: 'goodbye',
       greeting: 'greeting',
-	  Query: 'Query',
-	  Reply: 'Reply'
+	  query: 'query',
+	  reply: 'reply'
     },
     streams: {
       goodbye: handleGoodbye,
       greeting: handleGreeting,
-	  Query: handleQuery,
-	  Reply: handleReply,
+	  query: handleQuery,
+	  reply: handleReply,
       main: 'onboarding',
       onboarding: [sayHello],
       end: [untrained]
