@@ -84,7 +84,18 @@ exports.handle = function handle(client) {
     }
   })
   
-     const handleAboutAscendia = client.createStep({
+    const handleAboutAscendia = client.createStep({
+    satisfied() {
+      return false
+    },
+
+    prompt() {
+      client.addResponse('aboutAscendia_bot')
+      client.done()
+    }
+  })
+  
+    const handleAboutAscendia_bot = client.createStep({
     satisfied() {
       return false
     },
@@ -110,7 +121,8 @@ exports.handle = function handle(client) {
       greeting: handleGreeting,
 	  query: handleQuery,
 	  reply: handleReply,
-	  aboutAscendia: handleAboutAscendia,	  
+	  aboutAscendia: handleAboutAscendia,
+	  aboutAscendia_bot: handleAboutAscendia_bot,	  
       main: 'onboarding',
       onboarding: [sayHello],
       end: [untrained]
