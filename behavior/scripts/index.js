@@ -83,13 +83,26 @@ exports.handle = function handle(client) {
       client.done()
     }
   })
+  
+     const handleAboutAscendia = client.createStep({
+    satisfied() {
+      return false
+    },
+
+    prompt() {
+      client.addResponse('aboutAscendia_bot')
+      client.done()
+    }
+  })
 
   client.runFlow({
     classifications: {
       bye: 'bye',
       greeting: 'greeting',
 	  query: 'query',
-	  reply: 'reply'
+	  reply: 'reply',
+	  aboutAscendia: 'aboutAscendia',
+	  aboutAscendia_bot: 'aboutAscendia_bot'
     },
     streams: {
 	  goodbye: handleGoodbye,
@@ -97,6 +110,7 @@ exports.handle = function handle(client) {
       greeting: handleGreeting,
 	  query: handleQuery,
 	  reply: handleReply,
+	  aboutAscendia: handleAboutAscendia,	  
       main: 'onboarding',
       onboarding: [sayHello],
       end: [untrained]

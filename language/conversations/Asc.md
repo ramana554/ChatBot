@@ -6,8 +6,27 @@ timestamp: 2017-01-17T19:08:09.2910475+05:30
 Who are you?
 * query
 
-< We are Ascendia
+< What are you?
+* query
+
+< We are extremely passionate about Technology and Business.
 * reply
 
-< Hi there, Ascendia here :) How can I assist you? 
+< We are your extended Information Technology Team.
 * reply
+
+< What does Ascendia do?
+* aboutAscendia
+
+< What are the services you provide?
+* aboutAscendia
+
+< Ascendia handles various technology and business challenges that includes Cloud, mobile technologies, development, testing, CRM, ETL, Business Analytics etc of different organizations with unique advisory model.
+* aboutAscendia_bot
+
+< Ascendia offer diverse range of services in Cloud, mobile technologies, development, testing, CRM, ETL, Business Analytics etc.
+* aboutAscendia_bot
+
+
+
+
