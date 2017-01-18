@@ -8,3 +8,6 @@ Who are you?
 
 < We are Ascendia
 * reply
+
+< Hi there, Ascendia here :) How can I assist you? 
+* reply
