@@ -6,7 +6,7 @@ timestamp: 2017-01-17T19:08:09.2910475+05:30
 Who are you?
 * query
 
-< What are you?
+What are you?
 * query
 
 < We are extremely passionate about Technology and Business.
