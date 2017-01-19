@@ -15,11 +15,16 @@ What are you?
 < We are your extended Information Technology Team.
 * reply
 
-What does Ascendia do??
+What do you do?
 * aboutascendia
 
 What are the services you provide?
 * aboutascendia
+
+
+What does Ascendia do??
+* aboutascendia
+
 
 < Ascendia handles various technology and business challenges that includes Cloud, mobile technologies, development, testing, CRM, ETL, Business Analytics etc of different organizations with unique advisory model.
 * aboutascendia_bot
