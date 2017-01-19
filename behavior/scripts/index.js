@@ -90,8 +90,8 @@ exports.handle = function handle(client) {
     },
 
     prompt() {
-      //client.addResponse('whoareyou_bot')
-	  client.addResponse('greeting')
+      client.addResponse('whoareyou_bot')
+	  //client.addResponse('greeting')
       client.done()
     }
   })
@@ -102,7 +102,7 @@ exports.handle = function handle(client) {
     },
 
     prompt() {
-      client.addResponse('aboutAscendia_bot')
+      client.addResponse('aboutascendia_bot')
       client.done()
     }
   })
@@ -115,7 +115,7 @@ exports.handle = function handle(client) {
 	  query: 'query',
 	  reply: 'reply',
 	  aboutAscendia: 'aboutascendia',
-	  aboutAscendia_bot: 'aboutAscendia_bot'
+	  aboutAscendia_bot: 'aboutascendia_bot'
     },
     streams: {
 	  goodbye: handleGoodbye,

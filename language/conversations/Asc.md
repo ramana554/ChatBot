@@ -16,10 +16,10 @@ Who are you?
 * reply
 
 < What does Ascendia do?
-* aboutAscendia
+* aboutascendia
 
 < What are the services you provide?
-* aboutAscendia
+* aboutascendia
 
 < Ascendia handles various technology and business challenges that includes Cloud, mobile technologies, development, testing, CRM, ETL, Business Analytics etc of different organizations with unique advisory model.
 * aboutascendia_bot
