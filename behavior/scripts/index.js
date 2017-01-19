@@ -114,8 +114,8 @@ exports.handle = function handle(client) {
       greeting: 'greeting',
 	  query: 'query',
 	  reply: 'reply',
-	  aboutAscendia: 'aboutascendia',
-	  aboutAscendia_bot: 'aboutascendia_bot'
+	  aboutascendia: 'aboutascendia',
+	  aboutascendia_bot: 'aboutascendia_bot'
     },
     streams: {
 	  goodbye: handleGoodbye,
@@ -123,8 +123,8 @@ exports.handle = function handle(client) {
       greeting: handleGreeting,
 	  query: handleQuery,
 	  reply: handleReply,
-	  aboutAscendia: handleAbtAsc,
-	  aboutAscendia_bot: handleAbtAsc_bot,	  
+	  aboutascendia: handleAbtAsc,
+	  aboutascendia_bot: handleAbtAsc_bot,	  
       main: 'onboarding',
       onboarding: [sayHello],
       end: [untrained]

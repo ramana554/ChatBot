@@ -16,13 +16,13 @@ What are you?
 * reply
 
 What does Ascendia do??
-* aboutasc
+* aboutascendia
 
 What are the services you provide?
-* aboutasc
+* aboutascendia
 
 < Ascendia handles various technology and business challenges that includes Cloud, mobile technologies, development, testing, CRM, ETL, Business Analytics etc of different organizations with unique advisory model.
-* aboutasc_bot
+* aboutascendia_bot
 
 < Ascendia offer diverse range of services in Cloud, mobile technologies, development, testing, CRM, ETL, Business Analytics etc.
-* aboutasc_bot
+* aboutascendia_bot
