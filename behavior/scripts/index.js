@@ -113,7 +113,7 @@ exports.handle = function handle(client) {
       greeting: 'greeting',
 	  query: 'query',
 	  reply: 'reply',
-	  aboutAscendia: 'aboutAscendia',
+	  aboutAscendia: 'aboutascendia',
 	  aboutAscendia_bot: 'aboutAscendia_bot'
     },
     streams: {
