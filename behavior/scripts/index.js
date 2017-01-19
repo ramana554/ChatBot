@@ -90,7 +90,7 @@ exports.handle = function handle(client) {
     },
 
     prompt() {
-      client.addResponse('whoareyou_bot')
+      client.addResponse('aboutascendia_bot')
 	  //client.addResponse('greeting')
       client.done()
     }
